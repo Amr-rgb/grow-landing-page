@@ -38,11 +38,17 @@ body{
 
 /* ----------------header */
 
+.app-wrapper {
+  visibility: hidden;
+}
+
 header {
   position: absolute;
   width: 100%;
   padding: 2rem 0;
   z-index: 2;
+  
+  top: -100%;
 }
 
 header .container {
@@ -174,6 +180,11 @@ main .container .wrapper {
   gap: 2rem;
 }
 
+.head-letter {
+  top: -100px;
+  opacity: 0;
+}
+
 h1 {
   font-size: 8rem;
   font-weight: 900;
@@ -204,6 +215,8 @@ p {
   max-width: 550px;
   margin-top: -2rem;
   z-index: 2;
+
+  opacity: 0;
 }
 
 .main-btn {
@@ -220,6 +233,8 @@ p {
   background: #94DE1D;
   transition: background .5s;
   z-index: 2;
+
+  opacity: 0;
 }
 
 .main-btn:hover {
@@ -234,6 +249,8 @@ p {
   border-radius: 20px;
   border-top-right-radius: 0;
   overflow: hidden;
+
+  opacity: 0;
 }
 
 .video > div:first-child {
@@ -296,10 +313,12 @@ p {
 .social-icons div {
   cursor: pointer;
   width: 30px;
+  
+  opacity: 0;
 }
 
 .arrow {
-  display: none
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -345,6 +364,8 @@ p {
     align-items: center;
     opacity: .6;
     z-index: 2;
+
+    opacity: 0;
   }
   .arrow > div:last-child {
     width: 15px;
@@ -355,6 +376,8 @@ p {
     right: 0;
     border: 2px solid #94DE1D;
     opacity: 1;
+
+    opacity: 0;
   }
   .arrow.right > div:last-child {
     width: 15px;
