@@ -162,7 +162,7 @@ main .container {
   color: #fff;
   text-align: center;
   position: relative;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .branch {
